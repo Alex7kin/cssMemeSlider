@@ -2,7 +2,8 @@ body {
   display: flex;
   justify-content: center;      
   align-items: center;
-  min-height: 100vh;                      
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;                      
 }
 
 input[type="radio"] {
@@ -13,8 +14,8 @@ input[type="radio"] {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.1);
-  max-height: 90vh;
-  max-width: 90vw;
+  max-height: 80vh;
+  aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
 }
@@ -29,7 +30,6 @@ input[type="radio"] {
 
 .slide {
   width: 25%;
-  aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,10 +90,12 @@ input[type="radio"] {
   height: 1.8rem;
   border-radius: 50%;
   background-color: rgba(128, 128, 128, 0.315);
+  transition: 1000ms;
 }
 
 .dot:hover .dot-inner {
-  box-shadow: inset 0 0 0 0.3rem #ffd600; 
+  box-shadow: inset 0 0 0 0.4rem #ffd600;
+  transition: 600ms; 
 }
 
 #slide1:checked ~ .slider .slides-track  { transform: translateX(0%); }
