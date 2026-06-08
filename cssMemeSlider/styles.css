@@ -3,6 +3,7 @@ body {
   justify-content: center;      
   align-items: center;
   min-height: 100vh;
+  overflow: hidden;
   -webkit-tap-highlight-color: transparent;                      
 }
 
@@ -15,7 +16,7 @@ input[type="radio"] {
   overflow: hidden;
   box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.1);
   max-height: 80vh;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
   display: flex;
   flex-direction: column;
 }
