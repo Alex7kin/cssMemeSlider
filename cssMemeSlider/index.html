@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Meme Slider</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <input type="radio" name="slide" id="slide1" checked>
+  <input type="radio" name="slide" id="slide2">
+  <input type="radio" name="slide" id="slide3">
+  <input type="radio" name="slide" id="slide4">
+
+  <div class="slider">
+      <div class="slides-track">
+
+        <div class="slide" style="background-image: url('images/img (1).jpg');"></div>
+        <div class="slide" style="background-image: url('images/img (2).jpg');"></div>
+        <div class="slide" style="background-image: url('images/img (3).jpg');"></div>
+        <div class="slide" style="background-image: url('images/img (4).jpg');"></div>
+
+      </div>
+
+    <div class="bottom-bar">
+      <div class="captions-wrapper">
+        <div class="captions-track">
+          <p class="caption">Tung tung sahur</p>
+          <p class="caption">Ballerina cappuccino</p>
+          <p class="caption">Bombardino crocodilo</p>
+          <p class="caption">Chimpanzini Bananini</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <label for="slide1" class="dot">
+          <span class="dot-inner"></span>
+        </label>
+        <label for="slide2" class="dot">
+          <span class="dot-inner"></span>
+        </label>
+        <label for="slide3" class="dot">
+          <span class="dot-inner"></span>
+        </label>
+        <label for="slide4" class="dot">
+          <span class="dot-inner"></span>
+        </label>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
